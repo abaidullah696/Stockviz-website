@@ -56,7 +56,7 @@ html, body {
 }
 
 /* Content Layouts */
-.container, .charts, .news, .ETF, .Top-10 {
+.container, .charts, .news, .ETF, .screeners, .Top-10 {
     margin-left: 270px; /* Offset for navbar */
     padding: 20px;
     background-color: #111; /* Darker background for content */
