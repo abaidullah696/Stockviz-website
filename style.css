@@ -66,9 +66,10 @@ html, body {
 }
 
 .cont1 h1 {
+    padding: 30px;
     font-size: 36px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     line-height: 1.4;
 }
 
@@ -76,6 +77,7 @@ html, body {
     max-width: 100%;
     height: auto;
     display: block;
+    margin-top: -150px;
 }
 
 .chart-container {
