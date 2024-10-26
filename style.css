@@ -184,10 +184,10 @@ html, body {
 
 @media (max-width: 576px) {
     .logo {
-        font-size: 15px;
+        font-size: 20px;
         /* padding-right: 30px; */
-        /* padding-top: 10px; */
-        background-color: red;
+        padding-top: 12px;
+        /* background-color: red; */
     }
     .nav2 {
         flex-direction: row;
@@ -197,7 +197,7 @@ html, body {
         
     }
     .nav2 a {
-        font-size: 8px;
+        font-size: 12px;
         /* padding: 10px; */
         padding-bottom: 10px;
         /* padding-right: 20px;     */
