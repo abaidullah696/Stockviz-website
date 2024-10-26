@@ -9,7 +9,7 @@ html, body {
     width: 100%;
     font-family: Arial, sans-serif;
     background-color: #000;
-    color: #fff; /* Ensure text is readable */
+    color: #fff;
 }
 
 /* Navbar Styles */
@@ -61,7 +61,7 @@ html, body {
 .container, .charts, .news, .ETF, .screeners, .Top-10 {
     margin-left: 270px; /* Offset for navbar */
     padding: 20px;
-    background-color: #111; /* Darker background for content */
+    background-color: #111;
     min-height: 100vh;
 }
 
@@ -69,7 +69,7 @@ html, body {
     padding: 30px;
     font-size: 36px;
     color: #fff;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     line-height: 1.4;
 }
 
@@ -90,7 +90,6 @@ html, body {
     background-color: #111;
 }
 
-/* Adjust Widget Styling */
 .tradingview-widget-container {
     width: 100%;
     height: 100%;
@@ -119,4 +118,91 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    #navbar {
+        width: 220px;
+    }
+    .container, .charts, .news, .ETF, .screeners, .Top-10 {
+        margin-left: 240px;
+    }
+}
+
+@media (max-width: 992px) {
+    #navbar {
+        width: 200px;
+    }
+    .container, .charts, .news, .ETF, .screeners, .Top-10 {
+        margin-left: 220px;
+    }
+    .cont1 h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container, .charts, .news, .ETF, .screeners, .Top-10 {
+        margin-left: 0;
+        padding: 10px;
+    }
+    .cont1 h1 {
+        font-size: 28px;
+    }
+    .chart-container, .ETF-heatmap, .news, .Top-10 {
+        height: auto;
+        padding: 10px;
+    }
+    .logo {
+        font-size: 24px;
+        padding-right: 30px;
+        padding-top: 13px;
+    }
+    .nav2 {
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .nav2 a {
+        font-size: 15px;
+        padding: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;    
+    }
+    .cont1 h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 24px;
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+    .nav2 {
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .nav2 a {
+        font-size: 12px;
+        padding: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;    
+    }
+    .cont1 h1 {
+        font-size: 24px;
+    }
+    .chart-container, .ETF-heatmap, .news, .Top-10 {
+        flex-direction: column;
+    }
 }
