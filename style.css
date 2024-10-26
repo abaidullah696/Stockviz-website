@@ -201,6 +201,8 @@ html, body {
     }
     .cont1 h1 {
         font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 90px;
     }
     .chart-container, .ETF-heatmap, .news, .Top-10 {
         flex-direction: column;
@@ -225,6 +227,7 @@ html, body {
     }
     .cont1 h1 {
         font-size: 20px;
+        margin-bottom: 90px;
     }
     .chart-container, .ETF-heatmap, .news, .Top-10 {
         flex-direction: column;
