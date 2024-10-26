@@ -184,7 +184,7 @@ html, body {
 
 @media (max-width: 576px) {
     .logo {
-        font-size: 24px;
+        font-size: 15px;
         /* padding-right: 30px; */
         /* padding-top: 10px; */
         background-color: red;
@@ -192,14 +192,19 @@ html, body {
     .nav2 {
         flex-direction: row;
         align-items: center;
+        /* margin-right: 500px; */
+        
         
     }
     .nav2 a {
-        font-size: 12px;
+        font-size: 8px;
         /* padding: 10px; */
         padding-bottom: 10px;
         /* padding-right: 20px;     */
+    
+
     }
+
     .cont1 h1 {
         font-size: 24px;
         line-height: 1.2;
