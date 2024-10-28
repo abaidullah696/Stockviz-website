@@ -34,8 +34,15 @@ html, body {
     color: #fff;
     margin-bottom: 30px;
     font-weight: bold;
+    margin-right: 50px;
+    margin-top: 17px;
 }
 
+.logo-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .nav2 {
     display: flex;
     flex-direction: column;
@@ -270,4 +277,69 @@ html, body {
     .chart-container, .ETF-heatmap, .news, .Top-10 {
         flex-direction: column;
     }
+}
+
+
+
+
+
+
+
+
+/* Toggle Button Styles */
+#navbar .toggle-button {
+    /* display: none; Hidden by default */
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* Collapsible Navbar Styles */
+#navbar.collapsed {
+    width: 60px;
+}
+
+#navbar.collapsed .nav2,
+#navbar.collapsed .logo {
+    display: none; /* Hide links and logo when collapsed */
+}
+
+/* Show button on smaller screens*/
+
+    #navbar .toggle-button {
+        display: block;
+    }
+    #navbar {
+        width: 250px;
+        transition: width 0.3s ease;
+    }
+    .charts, .container, .news, .ETF, .screeners, .Top-10 {
+        margin-left: 0; /* Reset margin on content for mobile view */
+    }
+    #navbar.collapsed {
+        width: 60px; /* Smaller width when collapsed */
+    }
+
+
+
+
+
+    /* Default styles for content */
+.container, .charts, .news, .ETF, .screeners, .Top-10 {
+    margin-left: 250px; /* Full navbar width */
+    transition: margin-left 0.3s ease; /* Smooth transition */
+}
+
+/* When navbar is collapsed */
+#navbar.collapsed + .container,
+#navbar.collapsed + .charts,
+#navbar.collapsed + .news,
+#navbar.collapsed + .ETF,
+#navbar.collapsed + .screeners,
+#navbar.collapsed + .Top-10 {
+    margin-left: 60px; /* Reduced margin to match collapsed navbar width */
+    
 }
