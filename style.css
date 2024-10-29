@@ -24,9 +24,10 @@ html, body {
     left: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    z-index: 1000;
+    transition: width 0.3s ease;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
+    /* z-index: 1000; */
 }
 
 .logo {
@@ -37,7 +38,15 @@ html, body {
     margin-right: 50px;
     margin-top: 17px;
 }
-
+#navbar .toggle-button {
+    display: none;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
 .logo-toggle {
     display: flex;
     justify-content: center;
@@ -58,7 +67,7 @@ html, body {
     transition: background-color 0.3s;
 }
 
-.nav2 a:hover, .nav2 .active {
+.nav2 a:hover, .nav2 .active{
     background-color: #007bff;
     color: #fff;
     border-radius: 10px;
@@ -181,11 +190,29 @@ html, body {
         width: 100%;
         height: auto;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
+        transition: none;
+    }
+    #navbar.collapsed {
+        width: 100%;
+    }
+    /* Show .nav2 items when navbar is expanded */
+    #navbar.expanded .nav2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+    .toggle-button {
+        display: block;
+        font-size: 24px;
     }
     .container, .charts, .news, .ETF, .screeners, .Top-10 {
-        margin-left: 0;
+        margin-left: 250px;
         padding: 10px;
+        transition: margin-left 0.3s ease;
+
     }
     .cont1 h1 {
         font-size: 28px;
@@ -201,8 +228,9 @@ html, body {
         padding-top: 13px;
     }
     .nav2 {
-        flex-direction: row;
-        align-items: center;
+        display: none;
+        flex-direction: column;
+        width: 100%;
         
     }
     .nav2 a {
@@ -240,6 +268,20 @@ html, body {
         height: auto;
         flex-direction: row;
         justify-content: space-between;
+        transition: none;
+    }
+    #navbar.collapsed {
+        width: 100%;
+    }
+    /* Show .nav2 items when navbar is expanded */
+    #navbar.expanded .nav2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+    .toggle-button {
+        display: block;
     }
     .container, .charts, .news, .ETF, .screeners, .Top-10 {
         margin-left: 0;
