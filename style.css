@@ -64,7 +64,7 @@
 /* Responsive Adjustments */
 /* Base styles for larger screens */
 .container, .charts, .news, .ETF, .screeners, .Top-10 {
-    margin-left: 270px;
+    margin-left: 270px !important;
     padding: 20px;
     background-color: #000000;
     min-height: 100vh;
@@ -102,7 +102,7 @@
 
     /* Overriding base styles for mobile view */
     .container, .charts, .news, .ETF, .screeners, .Top-10 {
-        margin-left: 0; /* Remove margin to make it full width */
+        margin-left: 0 !important; /* Remove margin to make it full width */
         padding: 20px;
         background-color: #000000;
         min-height: 100vh;
